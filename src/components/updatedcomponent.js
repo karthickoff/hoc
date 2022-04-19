@@ -10,10 +10,15 @@ const UpdatedComponent = (OriginalComponent) => {
             this.state = {
                 first: '',
                 second: '',
-                Add: ''
+                Add: '',
+                third: '',
+                fourth: '',
+                btnAdd: '',
             }
             this.handleOnchange = this.handleOnchange.bind(this);
             this.handleOnfocus = this.handleOnfocus.bind(this);
+            this.handleButtonClick = this.handleButtonClick.bind(this);
+
 
         }
         handleOnchange(e) {
@@ -31,8 +36,15 @@ const UpdatedComponent = (OriginalComponent) => {
 
             }
         }
+        handleButtonClick() {
+            var c = this.state.third
+            var d = this.state.fourth
+            if (c && d) {
+                this.setState({ btnAdd: parseInt(c) + parseInt(d) })
+            }
+        }
         render() {
-            return <OriginalComponent first={this.state.first} second={this.state.second} handleOnchange={this.handleOnchange} handleOnfocus={this.handleOnfocus} Add={this.state.Add} />
+            return <OriginalComponent first={this.state.first} second={this.state.second} third={this.state.third} fourth={this.state.fourth} handleOnchange={this.handleOnchange} handleOnfocus={this.handleOnfocus} Add={this.state.Add} btnAdd={this.state.btnAdd} handleButtonClick={this.handleButtonClick} />
 
 
         }

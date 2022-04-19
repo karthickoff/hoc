@@ -1,8 +1,8 @@
 .area {
     padding: 70px;
-    width: 50%;
+    width: 44%;
     height: 300px;
-    margin: 105px 274px;
+    margin: 88px 30px;
     box-shadow: 16.5 1px 0.5px grey;
     /* border: 1px solid black; */
     box-shadow: 0 4px 8px 0 rgb(0 0 0 / 20%), 0 6px 20px 0 rgb(0 0 0 / 19%);
@@ -16,6 +16,31 @@
     margin-left: 15px;
 }
 
+.thirdNum {
+    margin-left: 30px;
+
+}
+
+.fourthNum {
+    margin-left: 15px;
+
+}
+
+.result2 {
+    margin-left: 40px;
+
+}
+
 .result {
-    margin-left: 130px;
+    margin-left: 95px;
+}
+
+.area2 {
+    height: 300px;
+    margin-top: 93px;
+    margin-left: 86px;
+    box-shadow: 16.5 1px 0.5px grey;
+    box-shadow: 0 4px 8px 0 rgb(0 0 0 / 20%), 0 6px 20px 0 rgb(0 0 0 / 19%);
+    width: 430px;
+    padding-top: 65px;
 }
